@@ -24,8 +24,8 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 // AppServiceInternalAPI is used to query user and room alias data from application

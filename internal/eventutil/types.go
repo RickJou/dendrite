@@ -18,7 +18,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/syncapi/types"
 )
 
 // ErrProfileNoExists is returned when trying to lookup a user's profile that

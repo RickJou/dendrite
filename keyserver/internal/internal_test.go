@@ -5,11 +5,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/internal"
-	"github.com/matrix-org/dendrite/keyserver/storage"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/internal"
+	"github.com/RickJou/dendrite/keyserver/storage"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/test"
 )
 
 func mustCreateDatabase(t *testing.T, dbType test.DBType) (storage.Database, func()) {

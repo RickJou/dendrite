@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/matrix-org/dendrite/roomserver"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/roomserver/storage"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/roomserver"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

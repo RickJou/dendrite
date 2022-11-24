@@ -10,12 +10,12 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/matrix-org/dendrite/internal/pushrules"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
-	"github.com/matrix-org/dendrite/userapi/storage"
-	userAPITypes "github.com/matrix-org/dendrite/userapi/types"
+	"github.com/RickJou/dendrite/internal/pushrules"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/userapi/storage"
+	userAPITypes "github.com/RickJou/dendrite/userapi/types"
 )
 
 func mustCreateDatabase(t *testing.T, dbType test.DBType) (storage.Database, func()) {

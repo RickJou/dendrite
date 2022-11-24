@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/tables"
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/federationapi/storage/tables"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

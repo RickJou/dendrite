@@ -21,9 +21,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
 
-	"github.com/matrix-org/dendrite/roomserver/acls"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/roomserver/acls"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/jetstream"
 )
 
 var keyContentFields = map[string]string{

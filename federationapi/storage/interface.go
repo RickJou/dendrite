@@ -20,8 +20,8 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/shared"
-	"github.com/matrix-org/dendrite/federationapi/types"
+	"github.com/RickJou/dendrite/federationapi/storage/shared"
+	"github.com/RickJou/dendrite/federationapi/types"
 )
 
 type Database interface {

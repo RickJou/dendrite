@@ -17,13 +17,13 @@ package perform
 import (
 	"context"
 
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/roomserver/internal/helpers"
-	"github.com/matrix-org/dendrite/roomserver/internal/input"
-	"github.com/matrix-org/dendrite/roomserver/internal/query"
-	"github.com/matrix-org/dendrite/roomserver/state"
-	"github.com/matrix-org/dendrite/roomserver/storage"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/roomserver/internal/helpers"
+	"github.com/RickJou/dendrite/roomserver/internal/input"
+	"github.com/RickJou/dendrite/roomserver/internal/query"
+	"github.com/RickJou/dendrite/roomserver/state"
+	"github.com/RickJou/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/roomserver/types"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 )

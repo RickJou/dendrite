@@ -15,12 +15,12 @@
 package roomserver
 
 import (
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/roomserver/internal"
+	"github.com/RickJou/dendrite/roomserver/inthttp"
+	"github.com/RickJou/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/setup/base"
 	"github.com/gorilla/mux"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/roomserver/internal"
-	"github.com/matrix-org/dendrite/roomserver/inthttp"
-	"github.com/matrix-org/dendrite/roomserver/storage"
-	"github.com/matrix-org/dendrite/setup/base"
 	"github.com/sirupsen/logrus"
 )
 

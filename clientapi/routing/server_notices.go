@@ -28,16 +28,16 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/roomserver/version"
+	"github.com/RickJou/dendrite/roomserver/version"
 
-	appserviceAPI "github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/clientapi/httputil"
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/internal/eventutil"
-	"github.com/matrix-org/dendrite/internal/transactions"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	appserviceAPI "github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/clientapi/httputil"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/internal/eventutil"
+	"github.com/RickJou/dendrite/internal/transactions"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 // Unspecced server notice request

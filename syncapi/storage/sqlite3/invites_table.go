@@ -20,10 +20,10 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

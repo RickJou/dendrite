@@ -29,7 +29,7 @@ or ports that Dendrite listens on, you can use the `-http-bind-address` and
 
 A common deployment pattern is to run the monolith under systemd. For this, you
 will need to create a service unit file. An example service unit file is available
-in the [GitHub repository](https://github.com/matrix-org/dendrite/blob/main/docs/systemd/monolith-example.service).
+in the [GitHub repository](https://github.com/RickJou/dendrite/blob/main/docs/systemd/monolith-example.service).
 
 Once you have installed the service unit, you can notify systemd, enable and start
 the service:

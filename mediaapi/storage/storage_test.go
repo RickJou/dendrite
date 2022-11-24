@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/matrix-org/dendrite/mediaapi/storage"
-	"github.com/matrix-org/dendrite/mediaapi/types"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/mediaapi/storage"
+	"github.com/RickJou/dendrite/mediaapi/types"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/test"
 )
 
 func mustCreateDatabase(t *testing.T, dbType test.DBType) (storage.Database, func()) {

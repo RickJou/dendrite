@@ -17,8 +17,8 @@ package inthttp
 import (
 	"context"
 
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/userapi/api"
 )
 
 const (

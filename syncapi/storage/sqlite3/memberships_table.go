@@ -22,10 +22,10 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
 )
 
 // The memberships table is designed to track the last time that

@@ -30,17 +30,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi/internal"
-	"github.com/matrix-org/dendrite/syncapi/notifier"
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/streams"
-	"github.com/matrix-org/dendrite/syncapi/types"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi/internal"
+	"github.com/RickJou/dendrite/syncapi/notifier"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/streams"
+	"github.com/RickJou/dendrite/syncapi/types"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 // RequestPool manages HTTP long-poll connections for /sync

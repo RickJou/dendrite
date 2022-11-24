@@ -28,7 +28,7 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/types"
 )
 
 type StateResolutionStorage interface {

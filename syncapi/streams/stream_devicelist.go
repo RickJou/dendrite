@@ -3,11 +3,11 @@ package streams
 import (
 	"context"
 
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/syncapi/internal"
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/syncapi/internal"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/types"
 )
 
 type DeviceListStreamProvider struct {

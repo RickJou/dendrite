@@ -21,11 +21,11 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/clientapi/userutil"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/userapi/api"
-	"github.com/matrix-org/dendrite/userapi/storage/sqlite3/deltas"
-	"github.com/matrix-org/dendrite/userapi/storage/tables"
+	"github.com/RickJou/dendrite/clientapi/userutil"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/userapi/storage/sqlite3/deltas"
+	"github.com/RickJou/dendrite/userapi/storage/tables"
 
 	log "github.com/sirupsen/logrus"
 )

@@ -10,7 +10,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.uber.org/atomic"
 
-	"github.com/matrix-org/dendrite/federationapi/storage"
+	"github.com/RickJou/dendrite/federationapi/storage"
 )
 
 // Statistics contains information about all of the remote federated

@@ -3,8 +3,8 @@ package inthttp
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/roomserver/api"
 )
 
 // AddRoutes adds the RoomserverInternalAPI handlers to the http.ServeMux.

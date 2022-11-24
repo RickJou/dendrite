@@ -19,9 +19,9 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/roomserver/storage/shared"
-	"github.com/matrix-org/dendrite/roomserver/storage/tables"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/storage/shared"
+	"github.com/RickJou/dendrite/roomserver/storage/tables"
+	"github.com/RickJou/dendrite/roomserver/types"
 )
 
 type Database interface {

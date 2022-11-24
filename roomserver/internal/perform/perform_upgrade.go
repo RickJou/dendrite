@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal/eventutil"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/internal/eventutil"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 	"github.com/sirupsen/logrus"

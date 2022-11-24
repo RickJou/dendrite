@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/test"
 )
 
 var dummyMigrations = []sqlutil.Migration{

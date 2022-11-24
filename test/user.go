@@ -20,7 +20,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

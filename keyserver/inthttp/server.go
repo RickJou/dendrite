@@ -17,8 +17,8 @@ package inthttp
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/keyserver/api"
 )
 
 func AddRoutes(internalAPIMux *mux.Router, s api.KeyInternalAPI) {

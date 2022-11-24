@@ -25,7 +25,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/ed25519"

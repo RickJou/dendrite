@@ -25,9 +25,9 @@ import (
 	"github.com/nats-io/nats.go"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	"github.com/matrix-org/dendrite/syncapi/types"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/syncapi/types"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 // SyncAPIProducer produces events for the sync API server to consume

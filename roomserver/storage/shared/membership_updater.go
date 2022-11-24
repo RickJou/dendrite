@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/matrix-org/dendrite/roomserver/storage/tables"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/storage/tables"
+	"github.com/RickJou/dendrite/roomserver/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

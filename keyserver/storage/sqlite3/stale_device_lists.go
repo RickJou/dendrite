@@ -19,8 +19,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/keyserver/storage/tables"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/keyserver/storage/tables"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

@@ -22,9 +22,9 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/userapi/api"
-	"github.com/matrix-org/dendrite/userapi/types"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/userapi/types"
 )
 
 type AccountDataTable interface {

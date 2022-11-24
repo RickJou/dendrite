@@ -24,8 +24,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
 
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/syncapi/storage"
 )
 
 func init() {

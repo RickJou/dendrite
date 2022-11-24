@@ -20,10 +20,10 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/RickJou/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/dgraph-io/ristretto"
 	"github.com/dgraph-io/ristretto/z"
-	"github.com/matrix-org/dendrite/roomserver/types"
-	"github.com/matrix-org/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"

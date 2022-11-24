@@ -30,17 +30,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	fedapi "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/roomserver/acls"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/roomserver/internal/query"
-	"github.com/matrix-org/dendrite/roomserver/producers"
-	"github.com/matrix-org/dendrite/roomserver/storage"
-	"github.com/matrix-org/dendrite/roomserver/types"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	"github.com/matrix-org/dendrite/setup/process"
+	fedapi "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/roomserver/acls"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/roomserver/internal/query"
+	"github.com/RickJou/dendrite/roomserver/producers"
+	"github.com/RickJou/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/setup/process"
 )
 
 // Inputer is responsible for consuming from the roomserver input

@@ -15,17 +15,17 @@
 package clientapi
 
 import (
-	appserviceAPI "github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/clientapi/api"
-	"github.com/matrix-org/dendrite/clientapi/producers"
-	"github.com/matrix-org/dendrite/clientapi/routing"
-	federationAPI "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/internal/transactions"
-	keyserverAPI "github.com/matrix-org/dendrite/keyserver/api"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	appserviceAPI "github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/clientapi/api"
+	"github.com/RickJou/dendrite/clientapi/producers"
+	"github.com/RickJou/dendrite/clientapi/routing"
+	federationAPI "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/internal/transactions"
+	keyserverAPI "github.com/RickJou/dendrite/keyserver/api"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

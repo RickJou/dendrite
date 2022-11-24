@@ -23,10 +23,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/RickJou/dendrite/clientapi/auth"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/getsentry/sentry-go"
-	"github.com/matrix-org/dendrite/clientapi/auth"
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
 	"github.com/matrix-org/util"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"

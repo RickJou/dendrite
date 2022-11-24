@@ -5,7 +5,7 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/test"
 )
 
 func Test_EventAuth(t *testing.T) {

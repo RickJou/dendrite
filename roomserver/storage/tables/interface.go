@@ -8,7 +8,7 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/tidwall/gjson"
 
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/types"
 )
 
 var OptimisationNotSupportedError = errors.New("optimisation not supported")

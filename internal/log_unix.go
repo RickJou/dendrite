@@ -22,7 +22,7 @@ import (
 	"log/syslog"
 
 	"github.com/MFAshby/stdemuxerhook"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/sirupsen/logrus"
 	lSyslog "github.com/sirupsen/logrus/hooks/syslog"
 )

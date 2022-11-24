@@ -20,10 +20,10 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/mediaapi/storage/tables"
-	"github.com/matrix-org/dendrite/mediaapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/mediaapi/storage/tables"
+	"github.com/RickJou/dendrite/mediaapi/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

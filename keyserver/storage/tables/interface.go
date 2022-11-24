@@ -19,8 +19,8 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/types"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

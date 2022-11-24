@@ -21,8 +21,8 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 
-	"github.com/matrix-org/dendrite/internal/fulltext"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/internal/fulltext"
+	"github.com/RickJou/dendrite/setup/config"
 )
 
 func mustOpenIndex(t *testing.T, tempDir string) *fulltext.Search {

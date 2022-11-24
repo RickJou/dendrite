@@ -23,8 +23,8 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/keyserver/types"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/keyserver/types"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 type KeyInternalAPI interface {

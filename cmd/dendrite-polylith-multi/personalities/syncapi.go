@@ -15,9 +15,9 @@
 package personalities
 
 import (
-	basepkg "github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi"
+	basepkg "github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi"
 )
 
 func SyncAPI(base *basepkg.BaseDendrite, cfg *config.Dendrite) {

@@ -18,10 +18,10 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 
@@ -65,8 +65,8 @@ const selectPositionInTopologySQL = "" +
 	"SELECT topological_position, stream_position FROM syncapi_output_room_events_topology" +
 	" WHERE event_id = $1"
 
-	// Select the max topological position for the room, then sort by stream position and take the highest,
-	// returning both topological and stream positions.
+// Select the max topological position for the room, then sort by stream position and take the highest,
+// returning both topological and stream positions.
 const selectMaxPositionInTopologySQL = "" +
 	"SELECT topological_position, stream_position FROM syncapi_output_room_events_topology" +
 	" WHERE topological_position=(" +

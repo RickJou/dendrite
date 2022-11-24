@@ -17,7 +17,7 @@ using the `dendrite-polylith-multi` personalities.
 Ensure that your reverse proxy is started and is proxying the correct
 endpoints to the correct components. Software such as [NGINX](https://www.nginx.com) or
 [HAProxy](http://www.haproxy.org) can be used for this purpose. A [sample configuration
-for NGINX](https://github.com/matrix-org/dendrite/blob/main/docs/nginx/polylith-sample.conf)
+for NGINX](https://github.com/RickJou/dendrite/blob/main/docs/nginx/polylith-sample.conf)
 is provided.
 
 ## Starting the components

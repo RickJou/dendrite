@@ -28,10 +28,10 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/nats-io/nats.go"
 
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	"github.com/matrix-org/dendrite/setup/process"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/setup/process"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -230,7 +230,7 @@ func (s *appserviceState) backoffAndPause(err error) error {
 // appserviceIsInterestedInEvent returns a boolean depending on whether a given
 // event falls within one of a given application service's namespaces.
 //
-// TODO: This should be cached, see https://github.com/matrix-org/dendrite/issues/1682
+// TODO: This should be cached, see https://github.com/RickJou/dendrite/issues/1682
 func (s *OutputRoomEventConsumer) appserviceIsInterestedInEvent(ctx context.Context, event *gomatrixserverlib.HeaderedEvent, appservice *config.ApplicationService) bool {
 	switch {
 	case appservice.URL == "":

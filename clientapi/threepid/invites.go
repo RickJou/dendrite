@@ -24,11 +24,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/internal/eventutil"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/internal/eventutil"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

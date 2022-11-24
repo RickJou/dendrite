@@ -7,7 +7,7 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/sirupsen/logrus"
 
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 type SyncRequest struct {

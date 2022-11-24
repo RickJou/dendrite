@@ -21,9 +21,9 @@ import (
 	"github.com/lib/pq"
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/postgres/deltas"
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/federationapi/storage/postgres/deltas"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
 )
 
 const queueEDUsSchema = `

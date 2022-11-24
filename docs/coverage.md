@@ -63,16 +63,16 @@ to remove packages which will never be tested and extension MSCs:
 # These commands are all similar but change which package paths are _removed_ from the output.
 
 # For Postgres (monolith)
-go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/matrix-org/dendrite' | grep -Ev 'inthttp|sqlite|setup/mscs|api_trace' > coverage.txt
+go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/RickJou/dendrite' | grep -Ev 'inthttp|sqlite|setup/mscs|api_trace' > coverage.txt
 
 # For Postgres (polylith)
-go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/matrix-org/dendrite' | grep -Ev 'sqlite|setup/mscs|api_trace' > coverage.txt
+go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/RickJou/dendrite' | grep -Ev 'sqlite|setup/mscs|api_trace' > coverage.txt
 
 # For SQLite (monolith)
-go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/matrix-org/dendrite' | grep -Ev 'inthttp|postgres|setup/mscs|api_trace' > coverage.txt
+go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/RickJou/dendrite' | grep -Ev 'inthttp|postgres|setup/mscs|api_trace' > coverage.txt
 
 # For SQLite (polylith)
-go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/matrix-org/dendrite' | grep -Ev 'postgres|setup/mscs|api_trace' > coverage.txt
+go tool cover -func=/path/to/server-0/integrationcover.log | grep 'github.com/RickJou/dendrite' | grep -Ev 'postgres|setup/mscs|api_trace' > coverage.txt
 ```
 
 A total value can then be calculated using:

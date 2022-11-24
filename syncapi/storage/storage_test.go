@@ -8,11 +8,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/types"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

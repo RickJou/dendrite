@@ -23,9 +23,9 @@ import (
 	"github.com/lib/pq"
 	"github.com/matrix-org/util"
 
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/roomserver/storage/tables"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/roomserver/storage/tables"
+	"github.com/RickJou/dendrite/roomserver/types"
 )
 
 const stateSnapshotSchema = `
@@ -79,8 +79,8 @@ const bulkSelectStateBlockNIDsSQL = "" +
 // TODO: There's a sequence scan here because of the hash join strategy, which is
 // probably O(n) on state key entries, so there must be a way to avoid that somehow.
 // Event type NIDs are:
-// - 5: m.room.member as per https://github.com/matrix-org/dendrite/blob/c7f7aec4d07d59120d37d5b16a900f6d608a75c4/roomserver/storage/postgres/event_types_table.go#L40
-// - 7: m.room.history_visibility as per https://github.com/matrix-org/dendrite/blob/c7f7aec4d07d59120d37d5b16a900f6d608a75c4/roomserver/storage/postgres/event_types_table.go#L42
+// - 5: m.room.member as per https://github.com/RickJou/dendrite/blob/c7f7aec4d07d59120d37d5b16a900f6d608a75c4/roomserver/storage/postgres/event_types_table.go#L40
+// - 7: m.room.history_visibility as per https://github.com/RickJou/dendrite/blob/c7f7aec4d07d59120d37d5b16a900f6d608a75c4/roomserver/storage/postgres/event_types_table.go#L42
 const bulkSelectStateForHistoryVisibilitySQL = `
 	SELECT event_nid FROM (
 	  SELECT event_nid, event_type_nid, event_state_key_nid FROM roomserver_events

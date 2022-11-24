@@ -17,8 +17,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/roomserver/api"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 )

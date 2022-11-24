@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/test"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

@@ -27,9 +27,9 @@ import (
 	"github.com/matrix-org/util"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/types"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/types"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 const defaultSyncTimeout = time.Duration(0)

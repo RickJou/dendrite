@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/roomserver/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrix"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"

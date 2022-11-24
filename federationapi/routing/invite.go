@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	roomserverVersion "github.com/matrix-org/dendrite/roomserver/version"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/roomserver/api"
+	roomserverVersion "github.com/RickJou/dendrite/roomserver/version"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 )

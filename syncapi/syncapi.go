@@ -19,21 +19,21 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/caching"
 
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 
-	"github.com/matrix-org/dendrite/syncapi/consumers"
-	"github.com/matrix-org/dendrite/syncapi/notifier"
-	"github.com/matrix-org/dendrite/syncapi/producers"
-	"github.com/matrix-org/dendrite/syncapi/routing"
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/streams"
-	"github.com/matrix-org/dendrite/syncapi/sync"
+	"github.com/RickJou/dendrite/syncapi/consumers"
+	"github.com/RickJou/dendrite/syncapi/notifier"
+	"github.com/RickJou/dendrite/syncapi/producers"
+	"github.com/RickJou/dendrite/syncapi/routing"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/streams"
+	"github.com/RickJou/dendrite/syncapi/sync"
 )
 
 // AddPublicRoutes sets up and registers HTTP handlers for the SyncAPI

@@ -19,9 +19,9 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/userapi/storage/tables"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/userapi/storage/tables"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 
@@ -86,8 +86,8 @@ func (s *accountDataStatements) SelectAccountData(
 	ctx context.Context,
 	localpart string, serverName gomatrixserverlib.ServerName,
 ) (
-	/* global */ map[string]json.RawMessage,
-	/* rooms */ map[string]map[string]json.RawMessage,
+/* global */ map[string]json.RawMessage,
+/* rooms */ map[string]map[string]json.RawMessage,
 	error,
 ) {
 	rows, err := s.selectAccountDataStmt.QueryContext(ctx, localpart, serverName)

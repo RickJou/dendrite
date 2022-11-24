@@ -11,8 +11,8 @@ import (
 	"github.com/getsentry/sentry-go"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/process"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/process"
 
 	natsserver "github.com/nats-io/nats-server/v2/server"
 	natsclient "github.com/nats-io/nats.go"
@@ -84,6 +84,9 @@ func setupNATS(process *process.ProcessContext, cfg *config.JetStream, nc *natsc
 				InsecureSkipVerify: true,
 			}))
 		}
+
+		//opts = append(opts, natsclient.UserInfo("sola", "sola"))
+
 		nc, err = natsclient.Connect(strings.Join(cfg.Addresses, ","), opts...)
 		if err != nil {
 			logrus.WithError(err).Panic("Unable to connect to NATS")

@@ -19,10 +19,10 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/userapi/storage/tables"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/userapi/storage/tables"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

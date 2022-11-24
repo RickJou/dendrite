@@ -17,7 +17,7 @@ package routing
 import (
 	"net/http"
 
-	"github.com/matrix-org/dendrite/internal"
+	"github.com/RickJou/dendrite/internal"
 	"github.com/matrix-org/util"
 )
 

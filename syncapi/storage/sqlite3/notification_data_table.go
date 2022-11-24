@@ -19,11 +19,11 @@ import (
 	"database/sql"
 	"strings"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/eventutil"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/eventutil"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
 )
 
 func NewSqliteNotificationDataTable(db *sql.DB, streamID *StreamIDStatements) (tables.NotificationData, error) {

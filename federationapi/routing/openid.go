@@ -18,8 +18,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/util"
 )
 

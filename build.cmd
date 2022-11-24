@@ -27,7 +27,7 @@
     )
     if "%BRANCH%" == "main" set BRANCH=
 
-    set FLAGS=-X github.com/matrix-org/dendrite/internal.branch=%BRANCH% -X github.com/matrix-org/dendrite/internal.build=%BUILD%
+    set FLAGS=-X github.com/RickJou/dendrite/internal.branch=%BRANCH% -X github.com/RickJou/dendrite/internal.build=%BUILD%
 
 :CHECK_BIN
     if exist "bin" goto :ALL_SET

@@ -34,7 +34,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/term"
 
-	"github.com/matrix-org/dendrite/setup"
+	"github.com/RickJou/dendrite/setup"
 )
 
 const usage = `Usage: %s

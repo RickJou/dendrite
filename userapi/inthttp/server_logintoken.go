@@ -16,8 +16,8 @@ package inthttp
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/userapi/api"
 )
 
 // addRoutesLoginToken adds routes for all login token API calls.

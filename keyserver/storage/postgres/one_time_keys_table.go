@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/storage/tables"
 	"github.com/lib/pq"
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/storage/tables"
 )
 
 var oneTimeKeysSchema = `

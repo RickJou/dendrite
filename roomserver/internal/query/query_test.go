@@ -19,8 +19,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/matrix-org/dendrite/roomserver/types"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/test"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

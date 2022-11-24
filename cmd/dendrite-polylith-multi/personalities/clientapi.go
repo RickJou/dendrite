@@ -15,10 +15,10 @@
 package personalities
 
 import (
-	"github.com/matrix-org/dendrite/clientapi"
-	"github.com/matrix-org/dendrite/internal/transactions"
-	basepkg "github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/clientapi"
+	"github.com/RickJou/dendrite/internal/transactions"
+	basepkg "github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 )
 
 func ClientAPI(base *basepkg.BaseDendrite, cfg *config.Dendrite) {

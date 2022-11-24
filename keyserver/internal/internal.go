@@ -29,12 +29,12 @@ import (
 	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
 
-	fedsenderapi "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/producers"
-	"github.com/matrix-org/dendrite/keyserver/storage"
-	"github.com/matrix-org/dendrite/setup/config"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	fedsenderapi "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/producers"
+	"github.com/RickJou/dendrite/keyserver/storage"
+	"github.com/RickJou/dendrite/setup/config"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 type KeyInternalAPI struct {

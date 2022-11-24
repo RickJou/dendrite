@@ -6,9 +6,9 @@ import (
 
 	"github.com/nats-io/nats.go"
 
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/jetstream"
 )
 
 func MustPublishMsgs(t *testing.T, jsctx nats.JetStreamContext, msgs ...*nats.Msg) {

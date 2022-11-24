@@ -1,0 +1,1 @@
+time="2022-11-23T02:21:25.338608000Z" level=info msg="Cleaning old notifications" func=github.com/RickJou/dendrite/userapi.NewInternalAPI.func1 file="/Users/alan/Desktop/source_read/my_github_code/dendrite/userapi/userapi.go:104"

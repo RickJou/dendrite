@@ -23,7 +23,7 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
 )
 
 // QueryLatestEventsAndStateRequest is a request to QueryLatestEventsAndState

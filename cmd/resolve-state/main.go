@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/roomserver/state"
-	"github.com/matrix-org/dendrite/roomserver/storage"
-	"github.com/matrix-org/dendrite/roomserver/types"
-	"github.com/matrix-org/dendrite/setup"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/roomserver/state"
+	"github.com/RickJou/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/setup"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

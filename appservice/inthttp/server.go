@@ -3,8 +3,8 @@ package inthttp
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/internal/httputil"
 )
 
 // AddRoutes adds the AppServiceQueryAPI handlers to the http.ServeMux.

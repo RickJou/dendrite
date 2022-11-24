@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/httputil"
 	"github.com/matrix-org/gomatrix"
 	"github.com/matrix-org/gomatrixserverlib"
 )

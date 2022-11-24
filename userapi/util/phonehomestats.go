@@ -27,9 +27,9 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/userapi/storage"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/userapi/storage"
 )
 
 type phoneHomeStats struct {

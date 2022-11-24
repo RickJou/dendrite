@@ -20,11 +20,11 @@ package storage
 import (
 	"fmt"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/postgres"
-	"github.com/matrix-org/dendrite/federationapi/storage/sqlite3"
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/federationapi/storage/postgres"
+	"github.com/RickJou/dendrite/federationapi/storage/sqlite3"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

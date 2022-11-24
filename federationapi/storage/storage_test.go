@@ -8,10 +8,10 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/matrix-org/dendrite/federationapi/storage"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/federationapi/storage"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 )
 
 func mustCreateFederationDatabase(t *testing.T, dbType test.DBType) (storage.Database, func()) {

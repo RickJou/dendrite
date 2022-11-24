@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/tables"
-	"github.com/matrix-org/dendrite/federationapi/types"
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/federationapi/storage/tables"
+	"github.com/RickJou/dendrite/federationapi/types"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/sqlutil"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

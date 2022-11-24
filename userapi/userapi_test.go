@@ -26,16 +26,16 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
-	"github.com/matrix-org/dendrite/userapi"
-	"github.com/matrix-org/dendrite/userapi/inthttp"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/userapi"
+	"github.com/RickJou/dendrite/userapi/inthttp"
 
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/userapi/api"
-	"github.com/matrix-org/dendrite/userapi/internal"
-	"github.com/matrix-org/dendrite/userapi/storage"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/userapi/internal"
+	"github.com/RickJou/dendrite/userapi/storage"
 )
 
 const (
@@ -158,7 +158,7 @@ func TestQueryProfile(t *testing.T) {
 
 // TestPasswordlessLoginFails ensures that a passwordless account cannot
 // be logged into using an arbitrary password (effectively a regression test
-// for https://github.com/matrix-org/dendrite/issues/2780).
+// for https://github.com/RickJou/dendrite/issues/2780).
 func TestPasswordlessLoginFails(t *testing.T) {
 	ctx := context.Background()
 	test.WithAllDatabases(t, func(t *testing.T, dbType test.DBType) {

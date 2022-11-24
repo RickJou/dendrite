@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/roomserver/types"
 	"github.com/matrix-org/util"
 	"github.com/sirupsen/logrus"
 )

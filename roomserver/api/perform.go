@@ -8,7 +8,7 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
 )
 
 type PerformErrorCode int

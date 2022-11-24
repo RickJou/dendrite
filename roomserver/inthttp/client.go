@@ -7,12 +7,12 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	asAPI "github.com/matrix-org/dendrite/appservice/api"
-	fsInputAPI "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/internal/httputil"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	asAPI "github.com/RickJou/dendrite/appservice/api"
+	fsInputAPI "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/roomserver/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 const (

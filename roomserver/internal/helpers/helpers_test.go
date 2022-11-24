@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/roomserver/types"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/matrix-org/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/base"
 
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 
-	"github.com/matrix-org/dendrite/roomserver/storage"
+	"github.com/RickJou/dendrite/roomserver/storage"
 )
 
 func mustCreateDatabase(t *testing.T, dbType test.DBType) (*base.BaseDendrite, storage.Database, func()) {

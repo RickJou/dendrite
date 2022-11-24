@@ -19,9 +19,9 @@ import (
 	"database/sql"
 	"encoding/json"
 
+	"github.com/RickJou/dendrite/federationapi/storage/tables"
+	"github.com/RickJou/dendrite/internal"
 	"github.com/lib/pq"
-	"github.com/matrix-org/dendrite/federationapi/storage/tables"
-	"github.com/matrix-org/dendrite/internal"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

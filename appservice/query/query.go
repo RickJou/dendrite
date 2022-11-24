@@ -28,8 +28,8 @@ import (
 	"github.com/opentracing/opentracing-go"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/setup/config"
 )
 
 const roomAliasExistsPath = "/rooms/"

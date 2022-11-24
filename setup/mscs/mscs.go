@@ -19,10 +19,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/matrix-org/dendrite/setup"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/mscs/msc2836"
-	"github.com/matrix-org/dendrite/setup/mscs/msc2946"
+	"github.com/RickJou/dendrite/setup"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/mscs/msc2836"
+	"github.com/RickJou/dendrite/setup/mscs/msc2946"
 	"github.com/matrix-org/util"
 )
 

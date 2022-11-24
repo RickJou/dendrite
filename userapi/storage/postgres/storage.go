@@ -22,11 +22,11 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/userapi/storage/postgres/deltas"
-	"github.com/matrix-org/dendrite/userapi/storage/shared"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/userapi/storage/postgres/deltas"
+	"github.com/RickJou/dendrite/userapi/storage/shared"
 
 	// Import the postgres database driver.
 	_ "github.com/lib/pq"

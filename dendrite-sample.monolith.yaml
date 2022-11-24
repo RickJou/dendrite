@@ -325,7 +325,7 @@ user_api:
   #  - "#main:matrix.org"
 
 # Configuration for Opentracing.
-# See https://github.com/matrix-org/dendrite/tree/master/docs/tracing for information on
+# See https://github.com/RickJou/dendrite/tree/master/docs/tracing for information on
 # how this works and how to set it up.
 tracing:
   enabled: false

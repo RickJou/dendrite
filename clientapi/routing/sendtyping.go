@@ -15,11 +15,11 @@ package routing
 import (
 	"net/http"
 
-	"github.com/matrix-org/dendrite/clientapi/httputil"
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/clientapi/producers"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/httputil"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/clientapi/producers"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/util"
 )
 

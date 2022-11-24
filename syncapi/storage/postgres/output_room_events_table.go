@@ -21,16 +21,16 @@ import (
 	"encoding/json"
 	"sort"
 
-	"github.com/matrix-org/dendrite/internal"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/syncapi/storage/postgres/deltas"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/internal"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/syncapi/storage/postgres/deltas"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
 
 	"github.com/lib/pq"
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/internal/sqlutil"
 )
 
 const outputRoomEventsSchema = `

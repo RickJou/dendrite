@@ -15,10 +15,10 @@
 package mediaapi
 
 import (
-	"github.com/matrix-org/dendrite/mediaapi/routing"
-	"github.com/matrix-org/dendrite/mediaapi/storage"
-	"github.com/matrix-org/dendrite/setup/base"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/mediaapi/routing"
+	"github.com/RickJou/dendrite/mediaapi/storage"
+	"github.com/RickJou/dendrite/setup/base"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/sirupsen/logrus"
 )

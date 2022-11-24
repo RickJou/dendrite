@@ -17,13 +17,13 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/internal/hooks"
-	"github.com/matrix-org/dendrite/internal/httputil"
-	roomserver "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/mscs/msc2836"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/internal/hooks"
+	"github.com/RickJou/dendrite/internal/httputil"
+	roomserver "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/mscs/msc2836"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 var (

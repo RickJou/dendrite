@@ -30,9 +30,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	fedsenderapi "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/setup/process"
+	fedsenderapi "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/setup/process"
 )
 
 var (

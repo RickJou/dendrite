@@ -5,13 +5,13 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi/storage/postgres"
-	"github.com/matrix-org/dendrite/syncapi/storage/sqlite3"
-	"github.com/matrix-org/dendrite/syncapi/storage/tables"
-	"github.com/matrix-org/dendrite/syncapi/types"
-	"github.com/matrix-org/dendrite/test"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi/storage/postgres"
+	"github.com/RickJou/dendrite/syncapi/storage/sqlite3"
+	"github.com/RickJou/dendrite/syncapi/storage/tables"
+	"github.com/RickJou/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/test"
 )
 
 func newRelationsTable(t *testing.T, dbType test.DBType) (tables.Relations, *sql.DB, func()) {

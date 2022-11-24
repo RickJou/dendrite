@@ -23,14 +23,14 @@ import (
 	"github.com/nats-io/nats.go"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/federationapi/queue"
-	"github.com/matrix-org/dendrite/federationapi/storage"
-	"github.com/matrix-org/dendrite/federationapi/types"
-	"github.com/matrix-org/dendrite/keyserver/api"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	"github.com/matrix-org/dendrite/setup/process"
+	"github.com/RickJou/dendrite/federationapi/queue"
+	"github.com/RickJou/dendrite/federationapi/storage"
+	"github.com/RickJou/dendrite/federationapi/types"
+	"github.com/RickJou/dendrite/keyserver/api"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/setup/process"
 )
 
 // KeyChangeConsumer consumes events that originate in key server.

@@ -5,9 +5,9 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	asAPI "github.com/matrix-org/dendrite/appservice/api"
-	fsAPI "github.com/matrix-org/dendrite/federationapi/api"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	asAPI "github.com/RickJou/dendrite/appservice/api"
+	fsAPI "github.com/RickJou/dendrite/federationapi/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 // RoomserverInputAPI is used to write events to the room server.

@@ -18,9 +18,9 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/storage"
-	"github.com/matrix-org/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/storage"
+	"github.com/RickJou/dendrite/setup/jetstream"
 	"github.com/nats-io/nats.go"
 	"github.com/sirupsen/logrus"
 )

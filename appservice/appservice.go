@@ -24,14 +24,14 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 
-	appserviceAPI "github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/appservice/consumers"
-	"github.com/matrix-org/dendrite/appservice/inthttp"
-	"github.com/matrix-org/dendrite/appservice/query"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	appserviceAPI "github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/appservice/consumers"
+	"github.com/RickJou/dendrite/appservice/inthttp"
+	"github.com/RickJou/dendrite/appservice/query"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

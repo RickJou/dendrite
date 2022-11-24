@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/internal/httputil"
 )
 
 // HTTP paths for the internal HTTP APIs

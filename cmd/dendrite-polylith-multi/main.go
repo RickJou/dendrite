@@ -19,10 +19,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/matrix-org/dendrite/cmd/dendrite-polylith-multi/personalities"
-	"github.com/matrix-org/dendrite/setup"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/cmd/dendrite-polylith-multi/personalities"
+	"github.com/RickJou/dendrite/setup"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/sirupsen/logrus"
 )
 

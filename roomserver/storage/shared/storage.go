@@ -11,10 +11,10 @@ import (
 	"github.com/matrix-org/util"
 	"github.com/tidwall/gjson"
 
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/roomserver/storage/tables"
-	"github.com/matrix-org/dendrite/roomserver/types"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/roomserver/storage/tables"
+	"github.com/RickJou/dendrite/roomserver/types"
 )
 
 // Ideally, when we have both events we should redact the event JSON and forget about the redaction, but we currently

@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi/types"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

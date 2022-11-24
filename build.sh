@@ -12,7 +12,7 @@ then
         export BRANCH=""
     fi
 
-    export FLAGS="-X github.com/matrix-org/dendrite/internal.branch=$BRANCH -X github.com/matrix-org/dendrite/internal.build=$BUILD"
+    export FLAGS="-X github.com/RickJou/dendrite/internal.branch=$BRANCH -X github.com/RickJou/dendrite/internal.build=$BUILD"
 else
     export FLAGS=""
 fi

@@ -11,8 +11,8 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"
 
-	"github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/internal/httputil"
+	"github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/internal/httputil"
 )
 
 // AddRoutes adds the FederationInternalAPI handlers to the http.ServeMux.

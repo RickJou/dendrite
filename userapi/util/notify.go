@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/matrix-org/dendrite/internal/pushgateway"
-	"github.com/matrix-org/dendrite/userapi/storage"
-	"github.com/matrix-org/dendrite/userapi/storage/tables"
+	"github.com/RickJou/dendrite/internal/pushgateway"
+	"github.com/RickJou/dendrite/userapi/storage"
+	"github.com/RickJou/dendrite/userapi/storage/tables"
 	"github.com/matrix-org/gomatrixserverlib"
 	log "github.com/sirupsen/logrus"
 )

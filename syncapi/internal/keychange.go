@@ -23,11 +23,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
 
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	keytypes "github.com/matrix-org/dendrite/keyserver/types"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/syncapi/storage"
-	"github.com/matrix-org/dendrite/syncapi/types"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	keytypes "github.com/RickJou/dendrite/keyserver/types"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/syncapi/storage"
+	"github.com/RickJou/dendrite/syncapi/types"
 )
 
 // DeviceOTKCounts adds one-time key counts to the /sync response

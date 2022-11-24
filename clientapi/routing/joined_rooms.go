@@ -19,9 +19,9 @@ import (
 
 	"github.com/matrix-org/util"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/roomserver/api"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 )
 
 type getJoinedRoomsResponse struct {

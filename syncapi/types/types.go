@@ -24,7 +24,7 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/tidwall/gjson"
 
-	"github.com/matrix-org/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/roomserver/api"
 )
 
 var (

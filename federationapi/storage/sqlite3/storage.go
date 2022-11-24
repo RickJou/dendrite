@@ -18,12 +18,12 @@ package sqlite3
 import (
 	"database/sql"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/shared"
-	"github.com/matrix-org/dendrite/federationapi/storage/sqlite3/deltas"
-	"github.com/matrix-org/dendrite/internal/caching"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/federationapi/storage/shared"
+	"github.com/RickJou/dendrite/federationapi/storage/sqlite3/deltas"
+	"github.com/RickJou/dendrite/internal/caching"
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

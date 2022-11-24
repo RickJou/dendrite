@@ -15,19 +15,19 @@
 package setup
 
 import (
-	appserviceAPI "github.com/matrix-org/dendrite/appservice/api"
-	"github.com/matrix-org/dendrite/clientapi"
-	"github.com/matrix-org/dendrite/clientapi/api"
-	"github.com/matrix-org/dendrite/federationapi"
-	federationAPI "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/internal/transactions"
-	keyAPI "github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/mediaapi"
-	roomserverAPI "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi"
-	userapi "github.com/matrix-org/dendrite/userapi/api"
+	appserviceAPI "github.com/RickJou/dendrite/appservice/api"
+	"github.com/RickJou/dendrite/clientapi"
+	"github.com/RickJou/dendrite/clientapi/api"
+	"github.com/RickJou/dendrite/federationapi"
+	federationAPI "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/internal/transactions"
+	keyAPI "github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/mediaapi"
+	roomserverAPI "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi"
+	userapi "github.com/RickJou/dendrite/userapi/api"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

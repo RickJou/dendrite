@@ -14,16 +14,16 @@ import (
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/nats-io/nats.go"
 
-	"github.com/matrix-org/dendrite/federationapi"
-	"github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/federationapi/internal"
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	rsapi "github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/jetstream"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/federationapi"
+	"github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/federationapi/internal"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	rsapi "github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/jetstream"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 )
 
 type fedRoomserverAPI struct {

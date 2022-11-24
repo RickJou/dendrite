@@ -8,7 +8,7 @@ import (
 	"github.com/matrix-org/gomatrix"
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/federationapi/types"
+	"github.com/RickJou/dendrite/federationapi/types"
 )
 
 // FederationInternalAPI is used to query information from the federation sender.

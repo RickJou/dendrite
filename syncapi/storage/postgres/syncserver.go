@@ -19,12 +19,12 @@ import (
 	"database/sql"
 
 	// Import the postgres database driver.
+	"github.com/RickJou/dendrite/internal/sqlutil"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/syncapi/storage/postgres/deltas"
+	"github.com/RickJou/dendrite/syncapi/storage/shared"
 	_ "github.com/lib/pq"
-	"github.com/matrix-org/dendrite/internal/sqlutil"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/syncapi/storage/postgres/deltas"
-	"github.com/matrix-org/dendrite/syncapi/storage/shared"
 )
 
 // SyncServerDatasource represents a sync server datasource which manages

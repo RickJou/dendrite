@@ -12,14 +12,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/internal/pushrules"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
-	"github.com/matrix-org/dendrite/userapi/api"
-	"github.com/matrix-org/dendrite/userapi/storage"
-	"github.com/matrix-org/dendrite/userapi/storage/tables"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/internal/pushrules"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/userapi/api"
+	"github.com/RickJou/dendrite/userapi/storage"
+	"github.com/RickJou/dendrite/userapi/storage/tables"
 )
 
 const loginTokenLifetime = time.Minute

@@ -17,13 +17,13 @@ package routing
 import (
 	"net/http"
 
-	"github.com/matrix-org/dendrite/clientapi/auth/authtypes"
-	"github.com/matrix-org/dendrite/clientapi/httputil"
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	"github.com/matrix-org/dendrite/clientapi/threepid"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/userapi/api"
-	userdb "github.com/matrix-org/dendrite/userapi/storage"
+	"github.com/RickJou/dendrite/clientapi/auth/authtypes"
+	"github.com/RickJou/dendrite/clientapi/httputil"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	"github.com/RickJou/dendrite/clientapi/threepid"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/userapi/api"
+	userdb "github.com/RickJou/dendrite/userapi/storage"
 
 	"github.com/matrix-org/gomatrixserverlib"
 	"github.com/matrix-org/util"

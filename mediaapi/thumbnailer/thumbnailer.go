@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/matrix-org/dendrite/mediaapi/storage"
-	"github.com/matrix-org/dendrite/mediaapi/types"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/mediaapi/storage"
+	"github.com/RickJou/dendrite/mediaapi/types"
+	"github.com/RickJou/dendrite/setup/config"
 	log "github.com/sirupsen/logrus"
 )
 

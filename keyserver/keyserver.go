@@ -18,16 +18,16 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 
-	fedsenderapi "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/consumers"
-	"github.com/matrix-org/dendrite/keyserver/internal"
-	"github.com/matrix-org/dendrite/keyserver/inthttp"
-	"github.com/matrix-org/dendrite/keyserver/producers"
-	"github.com/matrix-org/dendrite/keyserver/storage"
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/setup/jetstream"
+	fedsenderapi "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/consumers"
+	"github.com/RickJou/dendrite/keyserver/internal"
+	"github.com/RickJou/dendrite/keyserver/inthttp"
+	"github.com/RickJou/dendrite/keyserver/producers"
+	"github.com/RickJou/dendrite/keyserver/storage"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/setup/jetstream"
 )
 
 // AddInternalRoutes registers HTTP handlers for the internal API. Invokes functions

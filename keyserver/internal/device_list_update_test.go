@@ -29,8 +29,8 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/setup/process"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/setup/process"
 )
 
 var (

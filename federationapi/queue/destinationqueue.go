@@ -26,12 +26,12 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.uber.org/atomic"
 
-	fedapi "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/federationapi/statistics"
-	"github.com/matrix-org/dendrite/federationapi/storage"
-	"github.com/matrix-org/dendrite/federationapi/storage/shared"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/process"
+	fedapi "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/federationapi/statistics"
+	"github.com/RickJou/dendrite/federationapi/storage"
+	"github.com/RickJou/dendrite/federationapi/storage/shared"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/process"
 )
 
 const (

@@ -28,15 +28,15 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/matrix-org/dendrite/clientapi/jsonerror"
-	federationAPI "github.com/matrix-org/dendrite/federationapi/api"
-	"github.com/matrix-org/dendrite/federationapi/producers"
-	"github.com/matrix-org/dendrite/federationapi/types"
-	"github.com/matrix-org/dendrite/internal"
-	keyapi "github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/roomserver/api"
-	"github.com/matrix-org/dendrite/setup/config"
-	syncTypes "github.com/matrix-org/dendrite/syncapi/types"
+	"github.com/RickJou/dendrite/clientapi/jsonerror"
+	federationAPI "github.com/RickJou/dendrite/federationapi/api"
+	"github.com/RickJou/dendrite/federationapi/producers"
+	"github.com/RickJou/dendrite/federationapi/types"
+	"github.com/RickJou/dendrite/internal"
+	keyapi "github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/roomserver/api"
+	"github.com/RickJou/dendrite/setup/config"
+	syncTypes "github.com/RickJou/dendrite/syncapi/types"
 )
 
 const (

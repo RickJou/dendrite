@@ -15,10 +15,10 @@
 package personalities
 
 import (
-	"github.com/matrix-org/dendrite/appservice"
-	"github.com/matrix-org/dendrite/setup/base"
-	basepkg "github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
+	"github.com/RickJou/dendrite/appservice"
+	"github.com/RickJou/dendrite/setup/base"
+	basepkg "github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
 )
 
 func Appservice(base *base.BaseDendrite, cfg *config.Dendrite) {

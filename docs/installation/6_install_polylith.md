@@ -30,5 +30,5 @@ sent to the correct endpoint. You must ensure that a suitable reverse proxy is i
 and configured.
 
 Sample configurations are provided
-for [Caddy](https://github.com/matrix-org/dendrite/blob/main/docs/caddy/polylith/Caddyfile)
-and [NGINX](https://github.com/matrix-org/dendrite/blob/main/docs/nginx/polylith-sample.conf).
+for [Caddy](https://github.com/RickJou/dendrite/blob/main/docs/caddy/polylith/Caddyfile)
+and [NGINX](https://github.com/RickJou/dendrite/blob/main/docs/nginx/polylith-sample.conf).

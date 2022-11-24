@@ -18,7 +18,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/matrix-org/dendrite/federationapi/storage/tables"
+	"github.com/RickJou/dendrite/federationapi/storage/tables"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

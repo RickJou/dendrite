@@ -6,11 +6,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/matrix-org/dendrite/keyserver/api"
-	"github.com/matrix-org/dendrite/keyserver/storage"
-	"github.com/matrix-org/dendrite/keyserver/types"
-	"github.com/matrix-org/dendrite/test"
-	"github.com/matrix-org/dendrite/test/testrig"
+	"github.com/RickJou/dendrite/keyserver/api"
+	"github.com/RickJou/dendrite/keyserver/storage"
+	"github.com/RickJou/dendrite/keyserver/types"
+	"github.com/RickJou/dendrite/test"
+	"github.com/RickJou/dendrite/test/testrig"
 )
 
 var ctx = context.Background()

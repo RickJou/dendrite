@@ -53,7 +53,7 @@ The key files will now exist in your current working directory, and can be mount
 
 ## Starting Dendrite as a monolith deployment
 
-Create your config based on the [`dendrite-sample.monolith.yaml`](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.monolith.yaml) sample configuration file.
+Create your config based on the [`dendrite-sample.monolith.yaml`](https://github.com/RickJou/dendrite/blob/main/dendrite-sample.monolith.yaml) sample configuration file.
 
 Then start the deployment:
 
@@ -63,7 +63,7 @@ docker-compose -f docker-compose.monolith.yml up
 
 ## Starting Dendrite as a polylith deployment
 
-Create your config based on the [`dendrite-sample.polylith.yaml`](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) sample configuration file.
+Create your config based on the [`dendrite-sample.polylith.yaml`](https://github.com/RickJou/dendrite/blob/main/dendrite-sample.polylith.yaml) sample configuration file.
 
 Then start the deployment:
 

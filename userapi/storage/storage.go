@@ -23,10 +23,10 @@ import (
 
 	"github.com/matrix-org/gomatrixserverlib"
 
-	"github.com/matrix-org/dendrite/setup/base"
-	"github.com/matrix-org/dendrite/setup/config"
-	"github.com/matrix-org/dendrite/userapi/storage/postgres"
-	"github.com/matrix-org/dendrite/userapi/storage/sqlite3"
+	"github.com/RickJou/dendrite/setup/base"
+	"github.com/RickJou/dendrite/setup/config"
+	"github.com/RickJou/dendrite/userapi/storage/postgres"
+	"github.com/RickJou/dendrite/userapi/storage/sqlite3"
 )
 
 // NewUserAPIDatabase opens a new Postgres or Sqlite database (based on dataSourceName scheme)

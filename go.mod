@@ -1,4 +1,4 @@
-module github.com/matrix-org/dendrite
+module github.com/RickJou/dendrite
 
 require (
 	github.com/Arceliar/ironwood v0.0.0-20221025225125-45b4281814c2
