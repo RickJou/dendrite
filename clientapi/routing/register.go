@@ -575,18 +575,19 @@ func Register(
 	if resErr := httputil.UnmarshalJSON(reqBody, &r); resErr != nil {
 		return *resErr
 	}
+	//来宾账号注册(不启用)
 	if req.URL.Query().Get("kind") == "guest" {
 		return handleGuestRegistration(req, r, cfg, userAPI)
 	}
 
-	// Don't allow numeric usernames less than MAX_INT64.
+	// 不允许使用数字user name
 	if _, err := strconv.ParseInt(r.Username, 10, 64); err == nil {
 		return util.JSONResponse{
 			Code: http.StatusBadRequest,
 			JSON: jsonerror.InvalidUsername("Numeric user IDs are reserved"),
 		}
 	}
-	// Auto generate a numeric username if r.Username is empty
+	// 如果没有填写user name,自动生成数字user name
 	if r.Username == "" {
 		nreq := &userapi.QueryNumericLocalpartRequest{
 			ServerName: cfg.Matrix.ServerName, // TODO: might not be right
@@ -599,11 +600,10 @@ func Register(
 		r.Username = strconv.FormatInt(nres.ID, 10)
 	}
 
-	// Is this an appservice registration? It will be if the access
-	// token is supplied
+	//应用服务器使用令牌注册
 	accessToken, accessTokenErr := auth.ExtractAccessToken(req)
 
-	// Squash username to all lowercase letters
+	// 用户名转小写
 	r.Username = strings.ToLower(r.Username)
 	switch {
 	case r.Type == authtypes.LoginTypeApplicationService && accessTokenErr == nil:
@@ -620,12 +620,12 @@ func Register(
 			JSON: jsonerror.MissingArgument("A known registration type (e.g. m.login.application_service) must be specified if an access_token is provided"),
 		}
 	default:
-		// Spec-compliant case (neither the access_token nor the login type are
-		// specified, so it's a normal user registration)
+		//正常用户注册,验证用户名格式
 		if resErr := validateUsername(r.Username, cfg.Matrix.ServerName); resErr != nil {
 			return *resErr
 		}
 	}
+	//验证密码格式
 	if resErr := validatePassword(r.Password); resErr != nil {
 		return *resErr
 	}
@@ -636,7 +636,7 @@ func Register(
 		"auth.type":  r.Auth.Type,
 		"session_id": r.Auth.Session,
 	}).Info("Processing registration request")
-
+	//注册业务
 	return handleRegistrationFlow(req, r, sessionID, cfg, userAPI, accessToken, accessTokenErr)
 }
 
@@ -722,16 +722,14 @@ func handleRegistrationFlow(
 
 	// TODO: email / msisdn auth types.
 
-	// Appservices are special and are not affected by disabled
-	// registration or user exclusivity. We'll go onto the appservice
-	// registration flow if a valid access token was provided or if
-	// the login type specifically requests it.
+	// 应用服务是特殊的，不受禁用注册或用户独占性的影响。如果提供了有效的访问令牌或登录类型明确要求，我们将进入应用服务注册流程
 	if r.Type == authtypes.LoginTypeApplicationService && accessTokenErr == nil {
 		return handleApplicationServiceRegistration(
 			accessToken, accessTokenErr, req, r, cfg, userAPI,
 		)
 	}
 
+	//禁用用户注册
 	if cfg.RegistrationDisabled && r.Auth.Type != authtypes.LoginTypeSharedSecret {
 		return util.JSONResponse{
 			Code: http.StatusForbidden,
@@ -739,10 +737,8 @@ func handleRegistrationFlow(
 		}
 	}
 
-	// Make sure normal user isn't registering under an exclusive application
-	// service namespace. Skip this check if no app services are registered.
-	// If an access token is provided, ignore this check this is an appservice
-	// request and we will validate in validateApplicationService
+	//确保普通用户没有在独占的应用程序服务命名空间下注册。
+	//如果没有注册任何应用程序服务，请跳过此检查。如果提供了访问令牌，请忽略此检查这是一个应用服务请求，我们将在 validateApplicationService 中进行验证
 	if len(cfg.Derived.ApplicationServices) != 0 &&
 		UsernameMatchesExclusiveNamespaces(cfg, r.Username) {
 		return util.JSONResponse{
@@ -778,9 +774,7 @@ func handleRegistrationFlow(
 		}
 	}
 
-	// Check if the user's registration flow has been completed successfully
-	// A response with current registration flow and remaining available methods
-	// will be returned if a flow has not been successfully completed yet
+	// 检查用户的注册流程是否已成功完成如果流程尚未成功完成，将返回包含当前注册流程和剩余可用方法的响应
 	return checkAndCompleteFlow(sessions.getCompletedStages(sessionID),
 		req, r, sessionID, cfg, userAPI)
 }
@@ -839,6 +833,7 @@ func checkAndCompleteFlow(
 	cfg *config.ClientAPI,
 	userAPI userapi.ClientUserAPI,
 ) util.JSONResponse {
+	//检查自定义流程,此代码未实现
 	if checkFlowCompleted(flow, cfg.Derived.Registration.Flows) {
 		// This flow was completed, registration can continue
 		return completeRegistration(
@@ -907,8 +902,7 @@ func completeRegistration(
 	// Increment prometheus counter for created users
 	amtRegUsers.Inc()
 
-	// Check whether inhibit_login option is set. If so, don't create an access
-	// token or a device for this user
+	//检查是否设置了 inhibit_login 选项。如果是这样，请不要为此用户创建访问令牌或设备
 	if inhibitLogin {
 		return util.JSONResponse{
 			Code: http.StatusOK,
@@ -993,9 +987,7 @@ func checkFlows(
 	return true
 }
 
-// checkFlowCompleted checks if a registration flow complies with any allowed flow
-// dictated by the server. Order of stages does not matter. A user may complete
-// extra stages as long as the required stages of at least one flow is met.
+// 检查注册流程是否符合服务定义的任何允许流程。阶段顺序无关紧要。只要满足至少一个流程所需的阶段，用户就可以完成额外的阶段。
 func checkFlowCompleted(
 	flow []authtypes.LoginType,
 	allowedFlows []authtypes.Flow,

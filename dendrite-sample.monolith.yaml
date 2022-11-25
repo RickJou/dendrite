@@ -41,7 +41,7 @@ global:
   # sections. For polylith deployments, or monolith deployments using SQLite databases,
   # you must configure the "database" block for each component instead.
   database:
-    connection_string: postgresql://username:password@hostname/dendrite?sslmode=disable
+    connection_string: postgresql://root:abcd.1234@127.0.0.1/dendrite?sslmode=disable
     max_open_conns: 90
     max_idle_conns: 5
     conn_max_lifetime: -1
@@ -160,7 +160,7 @@ app_service_api:
 client_api:
   # Prevents new users from being able to register on this homeserver, except when
   # using the registration shared secret below.
-  registration_disabled: true
+  registration_disabled: false
 
   # Prevents new guest accounts from being created. Guest registration is also
   # disabled implicitly by setting 'registration_disabled' above.

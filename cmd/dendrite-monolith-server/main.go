@@ -43,6 +43,10 @@ var (
 )
 
 func main() {
+	os.Args = append(os.Args, "-config", "/opt/sola/dendrite.yaml")
+	os.Args = append(os.Args, "-really-enable-open-registration", "true")
+	//os.Args = append(os.Args, "-api", "true")
+
 	cfg := setup.ParseFlags(true)
 	httpAddr := config.HTTPAddress("http://" + *httpBindAddr)
 	httpsAddr := config.HTTPAddress("https://" + *httpsBindAddr)
