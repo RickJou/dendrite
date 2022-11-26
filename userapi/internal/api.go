@@ -257,6 +257,7 @@ func (a *UserInternalAPI) PerformDeviceCreation(ctx context.Context, req *api.Pe
 		"device_id":    req.DeviceID,
 		"display_name": req.DeviceDisplayName,
 	}).Info("PerformDeviceCreation")
+	//创建设备信息
 	dev, err := a.DB.CreateDevice(ctx, req.Localpart, serverName, req.DeviceID, req.AccessToken, req.DeviceDisplayName, req.IPAddr, req.UserAgent)
 	if err != nil {
 		return err
@@ -266,7 +267,7 @@ func (a *UserInternalAPI) PerformDeviceCreation(ctx context.Context, req *api.Pe
 	if req.NoDeviceListUpdate {
 		return nil
 	}
-	// create empty device keys and upload them to trigger device list changes
+	//创建并上传空设备密钥以触发设备列表更改
 	return a.deviceListUpdate(dev.UserID, []string{dev.ID})
 }
 
@@ -311,6 +312,7 @@ func (a *UserInternalAPI) PerformDeviceDeletion(ctx context.Context, req *api.Pe
 }
 
 func (a *UserInternalAPI) deviceListUpdate(userID string, deviceIDs []string) error {
+	//为设备创建空的key
 	deviceKeys := make([]keyapi.DeviceKeys, len(deviceIDs))
 	for i, did := range deviceIDs {
 		deviceKeys[i] = keyapi.DeviceKeys{
@@ -320,6 +322,7 @@ func (a *UserInternalAPI) deviceListUpdate(userID string, deviceIDs []string) er
 		}
 	}
 
+	//key server创建key
 	var uploadRes keyapi.PerformUploadKeysResponse
 	if err := a.KeyAPI.PerformUploadKeys(context.Background(), &keyapi.PerformUploadKeysRequest{
 		UserID:     userID,

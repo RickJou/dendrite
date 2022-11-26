@@ -763,10 +763,9 @@ func handleRegistrationFlow(
 		// Add Dummy to the list of completed registration stages
 		sessions.addCompletedSessionStage(sessionID, authtypes.LoginTypeDummy)
 
-	case "":
-		// An empty auth type means that we want to fetch the available
-		// flows. It can also mean that we want to register as an appservice
-		// but that is handed above.
+	case authtypes.LoginTypePassword:
+		//没有实现,自己实现一下
+		return checkAndCompleteFlow(sessions.getCompletedStages(sessionID), req, r, sessionID, cfg, userAPI)
 	default:
 		return util.JSONResponse{
 			Code: http.StatusNotImplemented,
@@ -833,8 +832,13 @@ func checkAndCompleteFlow(
 	cfg *config.ClientAPI,
 	userAPI userapi.ClientUserAPI,
 ) util.JSONResponse {
+	//没有自定义的注册流程,
+	return completeRegistration(
+		req.Context(), userAPI, r.Username, r.Password, "", req.RemoteAddr, req.UserAgent(), sessionID,
+		r.InhibitLogin, r.InitialDisplayName, r.DeviceID, userapi.AccountTypeUser,
+	)
 	//检查自定义流程,此代码未实现
-	if checkFlowCompleted(flow, cfg.Derived.Registration.Flows) {
+	/*if checkFlowCompleted(flow, cfg.Derived.Registration.Flows) {
 		// This flow was completed, registration can continue
 		return completeRegistration(
 			req.Context(), userAPI, r.Username, r.Password, "", req.RemoteAddr, req.UserAgent(), sessionID,
@@ -842,13 +846,15 @@ func checkAndCompleteFlow(
 		)
 	}
 	sessions.addParams(sessionID, r)
+	*/
+
 	// There are still more stages to complete.
 	// Return the flows and those that have been completed.
-	return util.JSONResponse{
+	/*return util.JSONResponse{
 		Code: http.StatusUnauthorized,
 		JSON: newUserInteractiveResponse(sessionID,
 			cfg.Derived.Registration.Flows, cfg.Derived.Registration.Params),
-	}
+	}*/
 }
 
 // completeRegistration runs some rudimentary checks against the submitted
@@ -878,6 +884,7 @@ func completeRegistration(
 			JSON: jsonerror.MissingArgument("Missing password"),
 		}
 	}
+	//执行账号创建
 	var accRes userapi.PerformAccountCreationResponse
 	err := userAPI.PerformAccountCreation(ctx, &userapi.PerformAccountCreationRequest{
 		AppServiceID: appserviceID,
@@ -912,7 +919,7 @@ func completeRegistration(
 			},
 		}
 	}
-
+	//生成token
 	token, err := auth.GenerateAccessToken()
 	if err != nil {
 		return util.JSONResponse{
@@ -921,6 +928,7 @@ func completeRegistration(
 		}
 	}
 
+	//创建设备信息
 	var devRes userapi.PerformDeviceCreationResponse
 	err = userAPI.PerformDeviceCreation(ctx, &userapi.PerformDeviceCreationRequest{
 		Localpart:         username,
@@ -943,6 +951,7 @@ func completeRegistration(
 		HomeServer:  accRes.Account.ServerName,
 		DeviceID:    devRes.Device.ID,
 	}
+	//将注册信息存储到session
 	sessions.addCompletedRegistration(sessionID, result)
 
 	return util.JSONResponse{

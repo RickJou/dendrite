@@ -20,13 +20,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lib/pq"
 	"github.com/RickJou/dendrite/clientapi/userutil"
 	"github.com/RickJou/dendrite/internal"
 	"github.com/RickJou/dendrite/internal/sqlutil"
 	"github.com/RickJou/dendrite/userapi/api"
 	"github.com/RickJou/dendrite/userapi/storage/postgres/deltas"
 	"github.com/RickJou/dendrite/userapi/storage/tables"
+	"github.com/lib/pq"
 	"github.com/matrix-org/gomatrixserverlib"
 )
 

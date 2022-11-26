@@ -65,9 +65,11 @@ func (a *KeyInternalAPI) QueryKeyChanges(ctx context.Context, req *api.QueryKeyC
 
 func (a *KeyInternalAPI) PerformUploadKeys(ctx context.Context, req *api.PerformUploadKeysRequest, res *api.PerformUploadKeysResponse) error {
 	res.KeyErrors = make(map[string]map[string]*api.KeyError)
+	//为设备创建key
 	if len(req.DeviceKeys) > 0 {
 		a.uploadLocalDeviceKeys(ctx, req, res)
 	}
+	//创建一次性key
 	if len(req.OneTimeKeys) > 0 {
 		a.uploadOneTimeKeys(ctx, req, res)
 	}
@@ -622,9 +624,9 @@ func (a *KeyInternalAPI) populateResponseWithDeviceKeysFromDatabase(
 }
 
 func (a *KeyInternalAPI) uploadLocalDeviceKeys(ctx context.Context, req *api.PerformUploadKeysRequest, res *api.PerformUploadKeysResponse) {
-	// get a list of devices from the user API that actually exist, as
-	// we won't store keys for devices that don't exist
+	//从用户 API 获取实际存在的设备列表，因为我们不会为不存在的设备存储密钥
 	uapidevices := &userapi.QueryDevicesResponse{}
+	//获取用户所有设备信息
 	if err := a.UserAPI.QueryDevices(ctx, &userapi.QueryDevicesRequest{UserID: req.UserID}, uapidevices); err != nil {
 		res.Error = &api.KeyError{
 			Err: err.Error(),
@@ -642,7 +644,7 @@ func (a *KeyInternalAPI) uploadLocalDeviceKeys(ctx context.Context, req *api.Per
 		existingDeviceMap[key.ID] = struct{}{}
 	}
 
-	// Get all of the user existing device keys so we can check for changes.
+	// 获取所有用户现有的设备密钥，以便我们检查更改。
 	existingKeys, err := a.DB.DeviceKeysForUser(ctx, req.UserID, nil, true)
 	if err != nil {
 		res.Error = &api.KeyError{
@@ -651,16 +653,15 @@ func (a *KeyInternalAPI) uploadLocalDeviceKeys(ctx context.Context, req *api.Per
 		return
 	}
 
-	// Work out whether we have device keys in the keyserver for devices that
-	// no longer exist in the user API. This is mostly an exercise to ensure
-	// that we keep some integrity between the two.
+	// 确定我们是否在密钥服务器中拥有用户 API 中不再存在的设备的设备密钥。这主要是为了确保我们在两者之间保持完整性。
 	var toClean []gomatrixserverlib.KeyID
 	for _, k := range existingKeys {
+		//如果有没有设备的key,则记录下来,准备删除
 		if _, ok := existingDeviceMap[k.DeviceID]; !ok {
 			toClean = append(toClean, gomatrixserverlib.KeyID(k.DeviceID))
 		}
 	}
-
+	//删除失去设备的key
 	if len(toClean) > 0 {
 		if err = a.DB.DeleteDeviceKeys(ctx, req.UserID, toClean); err != nil {
 			logrus.WithField("user_id", req.UserID).WithError(err).Errorf("Failed to clean up %d stale keyserver device key entries", len(toClean))
@@ -721,7 +722,7 @@ func (a *KeyInternalAPI) uploadLocalDeviceKeys(ctx context.Context, req *api.Per
 		}
 	}
 
-	// store the device keys and emit changes
+	// 存储设备key
 	err = a.DB.StoreLocalDeviceKeys(ctx, keysToStore)
 	if err != nil {
 		res.Error = &api.KeyError{
@@ -729,6 +730,7 @@ func (a *KeyInternalAPI) uploadLocalDeviceKeys(ctx context.Context, req *api.Per
 		}
 		return
 	}
+	//更改key,且发送消息
 	err = emitDeviceKeyChanges(a.Producer, existingKeys, keysToStore, req.OnlyDisplayNameUpdates)
 	if err != nil {
 		util.GetLogger(ctx).Errorf("Failed to emitDeviceKeyChanges: %s", err)

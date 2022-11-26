@@ -52,7 +52,7 @@ func (p *KeyChange) ProduceKeyChanges(keys []api.DeviceMessage) error {
 		}
 		m.Header.Set(jetstream.UserID, key.UserID)
 		m.Data = value
-
+		//发送key修改事件
 		_, err = p.JetStream.PublishMsg(m)
 		if err != nil {
 			return err
