@@ -231,10 +231,13 @@ func createRoom(
 	}
 	createContent["creator"] = userID
 	createContent["room_version"] = roomVersion
+	//创建房间事件,这个描述的是房间等级和房间相关配置信息
 	powerLevelContent := eventutil.InitialPowerLevelsContent(userID)
+	//邀请事件
 	joinRuleContent := gomatrixserverlib.JoinRuleContent{
 		JoinRule: gomatrixserverlib.Invite,
 	}
+	//历史信息可见事件
 	historyVisibilityContent := gomatrixserverlib.HistoryVisibilityContent{
 		HistoryVisibility: historyVisibilityShared,
 	}
@@ -252,9 +255,9 @@ func createRoom(
 	}
 
 	switch r.Preset {
-	case presetPrivateChat:
-		joinRuleContent.JoinRule = gomatrixserverlib.Invite
-		historyVisibilityContent.HistoryVisibility = historyVisibilityShared
+	case presetPrivateChat: //私有房间
+		joinRuleContent.JoinRule = gomatrixserverlib.Invite                  //加入规则为邀请
+		historyVisibilityContent.HistoryVisibility = historyVisibilityShared //历史信息可见度为共享
 	case presetTrustedPrivateChat:
 		joinRuleContent.JoinRule = gomatrixserverlib.Invite
 		historyVisibilityContent.HistoryVisibility = historyVisibilityShared
@@ -267,23 +270,23 @@ func createRoom(
 	}
 
 	createEvent := fledglingEvent{
-		Type:    gomatrixserverlib.MRoomCreate,
+		Type:    gomatrixserverlib.MRoomCreate, //创建房间
 		Content: createContent,
 	}
 	powerLevelEvent := fledglingEvent{
-		Type:    gomatrixserverlib.MRoomPowerLevels,
+		Type:    gomatrixserverlib.MRoomPowerLevels, //设置房间等级
 		Content: powerLevelContent,
 	}
 	joinRuleEvent := fledglingEvent{
-		Type:    gomatrixserverlib.MRoomJoinRules,
+		Type:    gomatrixserverlib.MRoomJoinRules, //加入房间规则
 		Content: joinRuleContent,
 	}
 	historyVisibilityEvent := fledglingEvent{
-		Type:    gomatrixserverlib.MRoomHistoryVisibility,
+		Type:    gomatrixserverlib.MRoomHistoryVisibility, //房间可见程度
 		Content: historyVisibilityContent,
 	}
 	membershipEvent := fledglingEvent{
-		Type:     gomatrixserverlib.MRoomMember,
+		Type:     gomatrixserverlib.MRoomMember, //房间成员加入
 		StateKey: userID,
 		Content: gomatrixserverlib.MemberContent{
 			Membership:  gomatrixserverlib.Join,
@@ -292,6 +295,7 @@ func createRoom(
 		},
 	}
 
+	//又加了四个事件
 	var nameEvent *fledglingEvent
 	var topicEvent *fledglingEvent
 	var guestAccessEvent *fledglingEvent

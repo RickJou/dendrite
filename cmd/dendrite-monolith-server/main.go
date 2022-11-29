@@ -44,7 +44,8 @@ var (
 
 func main() {
 	os.Args = append(os.Args, "-config", "/opt/sola/dendrite.yaml")
-	os.Args = append(os.Args, "-really-enable-open-registration", "true")
+	//和app测试时,把这个关掉(现有的版本是这样的)
+	//os.Args = append(os.Args, "-really-enable-open-registration", "true")
 	//os.Args = append(os.Args, "-api", "true")
 
 	cfg := setup.ParseFlags(true)
